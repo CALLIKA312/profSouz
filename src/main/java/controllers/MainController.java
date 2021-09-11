@@ -86,6 +86,8 @@ public class MainController {
                 alert.setHeaderText(null);
                 alert.setContentText("ТЫ АДМИН!");
                 alert.showAndWait();
+
+
             }
         }
 
@@ -95,13 +97,14 @@ public class MainController {
                 alert.setHeaderText(null);
                 alert.setContentText("Неверно введен пароль!");
                 alert.showAndWait();
+                initialize();
             }
-            initialize();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Нет пользователя с таким именем");
             alert.showAndWait();
+            initialize();
         }
 
 

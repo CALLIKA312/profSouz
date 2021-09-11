@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="models.StudentModel" table="student" optimistic-lock="version">
+
+        <id name="studentCode" type="java.lang.String"/>
+        <property name="name" type="java.lang.String"/>
+        <property name="secondName" type="java.lang.String"/>
+        <property name="surName" type="java.lang.String"/>
+        <property name="curse" type="java.lang.Integer"/>
+        <property name="groupCode" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>

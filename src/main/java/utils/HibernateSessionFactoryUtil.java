@@ -22,6 +22,8 @@ public class HibernateSessionFactoryUtil {
             try {
                 configuration = new Configuration().configure("configures/hibernate.cfg.xml");
                 configuration.addAnnotatedClass(UserModel.class);
+                configuration.addAnnotatedClass(StudentModel.class);
+
 
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());

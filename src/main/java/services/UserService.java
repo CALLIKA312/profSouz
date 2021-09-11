@@ -6,14 +6,11 @@ import models.UserModel;
 import java.util.List;
 
 
-public class UserService {
-
-
-    public static class AdminService {
+    public class UserService {
 
         private static final UserDAO userDAO = new UserDAO();
 
-        public AdminService() {
+        public UserService() {
         }
 
         public static void update(UserModel model) {
@@ -25,4 +22,3 @@ public class UserService {
         }
 
     }
-}

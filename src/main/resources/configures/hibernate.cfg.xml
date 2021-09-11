@@ -15,6 +15,7 @@
 
 
         <mapping resource="userTable.hbm.xml"/>
+        <mapping resource="studentTable.hbm.xml"/>
 
 
     </session-factory>

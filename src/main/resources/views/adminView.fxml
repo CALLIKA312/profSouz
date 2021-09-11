@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -39,7 +40,26 @@
                   </MenuBar>
                </children>
             </HBox>
-            <VBox prefHeight="386.0" prefWidth="600.0" />
+            <VBox prefWidth="600.0">
+               <children>
+                  <ScrollPane prefHeight="378.0" prefWidth="600.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="598.0">
+                           <children>
+                              <HBox layoutX="-1.0" prefHeight="100.0" prefWidth="600.0">
+                                 <children>
+                                    <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label text="ФИО:" />
+                                    <Label fx:id="fio_label" text="fio_label" />
+                                    <Label text="Номер зачетной книжки" />
+                                    <Label fx:id="student_code" text="student_code" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children></VBox>
          </children>
       </VBox>
    </children>
