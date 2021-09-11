@@ -20,7 +20,7 @@ public class UserDAO {
         session.close();
     }
 
-    public List<UserModel> findAll() {
+    public static List<UserModel> findAll() {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
         List list = session.createQuery("From UserModel").list();

@@ -1,11 +1,16 @@
 package models;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
+
+@Entity
+@Table(name = "user", schema = "public")
 public class UserModel {
     @Id
-    private String login;
+    private String username;
 
     @Column
     private String password;
@@ -14,12 +19,12 @@ public class UserModel {
     public UserModel() {
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setLogin(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -33,7 +38,7 @@ public class UserModel {
     @Override
     public String toString() {
         return "userModel{" +
-                "login='" + login + '\'' +
+                "login='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

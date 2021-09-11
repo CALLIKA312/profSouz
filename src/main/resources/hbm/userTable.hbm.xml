@@ -4,7 +4,7 @@
 <hibernate-mapping>
     <class name="models.UserModel" table="user" optimistic-lock="version">
 
-        <id name="login" type="java.lang.String"/>
+        <id name="username" type="java.lang.String"/>
         <property name="password" type="java.lang.String"/>
 
     </class>

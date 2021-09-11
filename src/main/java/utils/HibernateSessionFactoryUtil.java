@@ -21,7 +21,6 @@ public class HibernateSessionFactoryUtil {
         if (sessionFactory == null) {
             try {
                 configuration = new Configuration().configure("configures/hibernate.cfg.xml");
-                configuration.setProperty("hibernate.connection.url", curDBFilePath);
                 configuration.addAnnotatedClass(UserModel.class);
 
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
