@@ -15,6 +15,9 @@ public class UserModel {
     @Column
     private String password;
 
+    @Column
+    private String studentCode;
+
 
     public UserModel() {
     }
@@ -23,7 +26,7 @@ public class UserModel {
         return username;
     }
 
-    public void setLogin(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
@@ -35,11 +38,21 @@ public class UserModel {
         this.password = password;
     }
 
+
+    public String getStudentCode() {
+        return studentCode;
+    }
+
+    public void setStudentCode(String studentCode) {
+        this.studentCode = studentCode;
+    }
+
     @Override
     public String toString() {
-        return "userModel{" +
-                "login='" + username + '\'' +
+        return "UserModel{" +
+                "username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", studentCode='" + studentCode + '\'' +
                 '}';
     }
 }

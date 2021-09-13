@@ -6,6 +6,8 @@
 
         <id name="username" type="java.lang.String"/>
         <property name="password" type="java.lang.String"/>
+        <property name="studentCode" type="java.lang.String"/>
+
 
     </class>
 </hibernate-mapping>

@@ -27,6 +27,12 @@ public class StudentModel {
     @Column
     private String groupCode;
 
+    @Column
+    private String photoPath;
+
+    @Column
+    private String phoneNumber;
+
     public StudentModel() {
     }
 
@@ -78,6 +84,22 @@ public class StudentModel {
         this.groupCode = groupCode;
     }
 
+    public String getPhotoPath() {
+        return photoPath;
+    }
+
+    public void setPhotoPath(String photoPath) {
+        this.photoPath = photoPath;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
     @Override
     public String toString() {
         return "StudentModel{" +
@@ -87,6 +109,7 @@ public class StudentModel {
                 ", surName='" + surName + '\'' +
                 ", curse=" + curse +
                 ", groupCode='" + groupCode + '\'' +
+                ", photoPath='" + photoPath + '\'' +
                 '}';
     }
 }

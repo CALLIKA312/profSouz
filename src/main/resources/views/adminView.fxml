@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -17,32 +19,22 @@
    <children>
       <VBox prefHeight="300.0" prefWidth="300.0">
          <children>
-            <HBox prefHeight="79.0" prefWidth="600.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="79.0" prefWidth="600.0">
                <children>
-                  <MenuBar prefHeight="25.0">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="File">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Close" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Edit">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Delete" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Help">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="About" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
+                  <Label text="Группа:">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="groupComboBox" onAction="#groupFilterChoose" prefWidth="150.0" />
                </children>
             </HBox>
             <VBox prefWidth="600.0">
                <children>
-                  <ScrollPane prefHeight="378.0" prefWidth="600.0">
+                  <ScrollPane fx:id="scrollPane" prefHeight="378.0" prefWidth="600.0">
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="598.0">
                            <children>

@@ -12,7 +12,6 @@ public class HibernateSessionFactoryUtil {
     private static SessionFactory sessionFactory;
 
     private static Configuration configuration;
-    private static String curDBFilePath = "";
 
     public HibernateSessionFactoryUtil() {
     }
@@ -23,7 +22,8 @@ public class HibernateSessionFactoryUtil {
                 configuration = new Configuration().configure("configures/hibernate.cfg.xml");
                 configuration.addAnnotatedClass(UserModel.class);
                 configuration.addAnnotatedClass(StudentModel.class);
-
+                configuration.addAnnotatedClass(GroupModel.class);
+                configuration.addAnnotatedClass(FacultyModel.class);
 
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());

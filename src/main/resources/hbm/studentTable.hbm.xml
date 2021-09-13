@@ -10,6 +10,8 @@
         <property name="surName" type="java.lang.String"/>
         <property name="curse" type="java.lang.Integer"/>
         <property name="groupCode" type="java.lang.String"/>
+        <property name="photoPath" type="java.lang.String"/>
+        <property name="phoneNumber" type="java.lang.String"/>
 
     </class>
 </hibernate-mapping>

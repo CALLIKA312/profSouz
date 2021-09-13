@@ -13,10 +13,9 @@
         <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="show_sql">true</property>
 
-
         <mapping resource="userTable.hbm.xml"/>
         <mapping resource="studentTable.hbm.xml"/>
-
-
+        <mapping resource="groupTable.hbm.xml"/>
+        <mapping resource="facultyTable.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
